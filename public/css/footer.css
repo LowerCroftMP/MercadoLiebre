@@ -1,0 +1,126 @@
+@media screen and (max-width: 360px) {
+    .body-footer {
+        background-color:var(--grisClaro);
+        margin: 0px;
+    }
+    
+    .body-footer section{
+        margin-bottom: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .body-footer section i {
+        text-align: center;
+        font-size: x-large;
+        margin-bottom: 5px;
+        height: 0em;
+        width: 2em;
+        color: var(--celeste);
+    }
+    
+    .body-footer section h4{
+        text-align: center;
+        height: 18px;
+        width: 100%;
+    }
+    
+    .body-footer section p {
+        text-align: center;
+        font-size: var(--cuerpo-de-t);
+        font-weight: lighter;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: var(--cuerpo-de-t);
+    }
+    
+    .body-footer div {
+        font-weight: lighter;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width: 361px) {
+    .body-footer {
+        background-color:var(--grisClaro);
+        margin: 0px;
+    }
+    
+    .body-footer section{
+        margin-bottom: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .body-footer section i {
+        text-align: center;
+        font-size: x-large;
+        margin-bottom: 5px;
+        height: 0em;
+        width: 2em;
+        color: var(--celeste);
+    }
+    
+    .body-footer section h4{
+        text-align: center;
+        height: 18px;
+        width: 100%;
+    }
+    
+    .body-footer section p {
+        text-align: center;
+        font-size: var(--cuerpo-de-t);
+        font-weight: lighter;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: var(--cuerpo-de-t);
+    }
+    
+    .body-footer div {
+        font-weight: lighter;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .body-footer {
+        background-color:var(--grisClaro);
+        margin: 0px;
+    }
+    
+    .body-footer section{
+        margin-bottom: 6px;
+        text-align: center;
+        width: 100%;
+        height: 262px;
+    }
+    .body-footer section i {
+        text-align: center;
+        font-size: x-large;
+        margin-bottom: 5px;
+        height: 0em;
+        width: 2em;
+        color: var(--celeste);
+    }
+    
+    .body-footer section h4{
+        text-align: center;
+        height: 18px;
+        width: 100%;
+    }
+    
+    .body-footer section p {
+        text-align: center;
+        font-size: var(--cuerpo-de-t);
+        font-weight: lighter;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-size: var(--cuerpo-de-t);
+    }
+    
+    .body-footer div {
+        font-weight: lighter;
+        margin: 0px;
+        padding: 0px;
+    }
+}
