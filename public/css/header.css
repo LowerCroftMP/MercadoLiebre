@@ -1,0 +1,217 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pagina {
+    background-color: var(--amarillo);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.busqueda {
+    width: 90%;
+    border: 1px solid #000;
+    padding: 1px;
+    color: var(--grisoscuro);
+    background-color: var(--grisclaro);
+    text-align: center;
+    font-size: x-small;
+    border-radius: 4px;
+}
+
+#inicio{
+    display: flex;
+    flex-direction: column;
+    margin: 9px 0 45px 0;
+    width: 100%;
+}
+
+#contenedorinicio{flex-wrap: wrap;display: flex;padding: 0px;justify-content: space-between;align-items: center;}
+#logo-ml{
+
+width: 50%;
+
+padding: 0%;
+}
+#busqueda-lupa{
+    
+width: 50%;
+    
+padding: 2%;
+    
+display: flex;
+}
+
+
+nav {
+    width: 100%;
+    padding: 1%;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+#principal {
+    display: none;
+}
+
+nav#segundonav {}
+
+
+nav#primernav {}
+
+
+#lupa {
+    border: 1px solid #000;
+    border-radius: 23%;
+    padding: 5px;
+    background-color: var(--grisclaro);
+    font-size: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.burger-menu {
+    width: 33px;
+    height: 29px;
+    padding: 3px;
+    color: var(--grisclaro);
+    font-size: 20px;
+    background-color: var(--celeste);
+    text-align: center;
+    border-radius: 6px;
+    }
+
+#imgML {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#compra{
+    display: flex;
+    padding: 0px;
+    margin: 15px;
+    height: 1px;
+    line-height: 15px;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+
+@media (min-width: 768px) {
+    header {
+    margin: 10px;
+}
+    
+    .pagina {
+    display: flow;
+}
+    
+    .busqueda {height: 125%;width: 100%;}
+    
+    #inicio{
+}
+
+    #contenedorinicio{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px;
+        padding: 18px;
+        width: 100%;
+        }
+    #logo-ml{
+    width: 25%;
+    padding: 0;
+}
+
+    #busqueda-lupa{
+    width: 30%;
+    height: 25px;
+    padding: 0;
+}
+
+    
+    nav {}
+
+    ul{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+    
+    #principal {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+    
+    nav#segundonav {
+    width: 50%;
+    display: flex;
+}
+    
+    
+    nav#primernav {display: flex;width: 43%;}
+    
+    
+    #lupa {
+    width: 12%;
+    padding: 14px;
+}
+    
+    nav a{}
+    
+    .burger-menu {
+    display: none;
+    }   
+    #imgML {}
+    
+    #compra{
+    width: 100%;
+    padding: 0px;
+    font-size: 14px;
+}
+}
+
+
+@media (min-width:1024px){
+    header {}
+    .pagina {}
+    .busqueda {}
+    #inicio{}
+    #contenedorinicio{}
+    #logo-ml{}
+    #busqueda-lupa{
+    width: 35%;
+    padding: 0%;
+}
+    nav {}
+    ul{}
+    #principal {}
+    nav#segundonav {}
+    nav#primernav {}
+    #lupa {
+    width: 5%;
+    border-radius: 25%;
+}
+    nav a{}
+    .burger-menu {}   
+    #imgML {}
+    #compra{}
+}

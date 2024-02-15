@@ -1,0 +1,126 @@
+.articulos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 15px 0 15px 0;
+}
+main {
+    border: 15px solid var(--grisclaro);
+}
+
+h4{
+    display: none;
+}
+
+article{
+    border: 10px solid var(--grisclaro);
+    padding: 15px;
+    display: block;
+    font-size: var(--descripcion);
+    background-color: white;
+}
+
+.precio {
+    font-size: var(--precios);
+    width: 10%;
+}
+
+.descuento{
+    font-size: var(--descuento);
+    color: var(--verde);
+    width: 60%;
+    letter-spacing: -1px
+}
+.contenedor{
+    
+border-top: 1px solid var(--grisclaro);
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carrito-envios{
+    color: var(--verde);
+    margin: 0px;
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 29px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 49px;
+}
+.precio-descuento{display: flex;margin-bottom: 10px;justify-content: space-between;}
+
+
+@media (min-width: 768px){
+    .articulos{}
+    main {
+    width: 90%;
+    margin: auto;
+}
+    article{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin-top: 15px;
+    border: none;
+    display: inline-block;
+    width: 40%;
+    padding: 7px;
+    margin: 0px;
+}    
+    .precio {}
+    .descuento {
+        color: var(--verde);
+    }
+
+    .contenedor{
+    border-top: 1px solid var(--grisclaro);
+    padding: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+    h4{
+    display: block;
+    }
+    img{}
+
+
+    .carrito-envios{
+    display: inline-block;
+    font-size: 26px;
+    padding: 5px;
+    width: 44px;
+    height: 41px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: -15px;
+}
+}
+    .precio-descuento{}
+}
+
+
+@media (min-width:1024px){
+    .articulos{}
+    main {}
+    h4{}
+    article{width: 22%;}
+    .precio {
+}
+    .descuento{}
+    .contenedor{
+}
+    img{}
+    .carrito-envios{}
+    .precio-descuento{
+}
+}
+    
