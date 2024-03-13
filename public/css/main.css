@@ -1,126 +1,316 @@
-.articulos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 30px;
-    padding: 15px 0 15px 0;
-}
-main {
-    border: 15px solid var(--grisclaro);
-}
 
-h4{
-    display: none;
-}
-
-article{
-    border: 10px solid var(--grisclaro);
-    padding: 15px;
-    display: block;
-    font-size: var(--descripcion);
-    background-color: white;
-}
-
-.precio {
-    font-size: var(--precios);
-    width: 10%;
-}
-
-.descuento{
-    font-size: var(--descuento);
-    color: var(--verde);
-    width: 60%;
-    letter-spacing: -1px
-}
-.contenedor{
-    
-border-top: 1px solid var(--grisclaro);
-}
-img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.carrito-envios{
-    color: var(--verde);
-    margin: 0px;
-    display: block;
-    padding: 5px;
-    width: 30px;
-    height: 29px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 49px;
-}
-.precio-descuento{display: flex;margin-bottom: 10px;justify-content: space-between;}
-
-
-@media (min-width: 768px){
-    .articulos{}
-    main {
+.body-main {
+    background-color: #ebebeb;
     width: 90%;
     margin: auto;
 }
-    article{
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    margin-top: 15px;
-    border: none;
-    display: inline-block;
-    width: 40%;
-    padding: 7px;
-    margin: 0px;
-}    
-    .precio {}
-    .descuento {
-        color: var(--verde);
-    }
 
-    .contenedor{
-    border-top: 1px solid var(--grisclaro);
-    padding: 15px;
+.body-main .img-banner {
+    width: 100%;
+}
+
+.body-main .general {
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.body-main .general h4 {
+    font-family: var(--roboto);
+    margin-top: 7px;
+    font-size: var(--titularesBasadoEnTuÚltimaVisita-Ofertas);
+    color: var(--grisOscuro);
+    text-align: center;
+    height: 45px;
+    margin-top: 7px;
+}
+
+.body-main .general .general-art article {
+    background-color: white;
+    border: solid 1px lightgray;
+    width: 76vw;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
+}
+
+.body-main .general .general-art article .img-producto {
+    width: 170px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+.body-main .general .general-art article .caja-info {
+    border-top: solid 1px var(--grisClaro);
+    margin: auto;
+    font-weight: 400;
     position: relative;
 }
-    h4{
+
+.body-main .general .general-art article .caja-info .envio {
     display: block;
-    }
-    img{}
-
-
-    .carrito-envios{
-    display: inline-block;
-    font-size: 26px;
+    color: var(--verde);
+    text-align: justify;
+    font-size: 16px;
     padding: 5px;
-    width: 44px;
-    height: 41px;
+    width: 23px;
+    height: 20px;
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    position: absolute;
-    right: 15px;
+    position: relative;
+    margin-left: auto;
+    top: -15px;
+
+}
+
+.body-main .general .general-art article .caja-info .precios {
+    font-size: var(--precios);
+    margin-left: 10px;
+    display: inline;
+    padding: 0px 10px 10px 10px;
+}
+
+.body-main .general .general-art article .caja-info .descuentos {
+    font-size: var(--descuentos);
+    margin-left: 10px;
+    color: var(--verde);
+    display: inline;
+    padding: 0px 10px 10px 10px;
+}
+
+.body-main .general .general-art article .caja-info .descripcion {
+    font-size: var(--descripciones);
+    margin-left: 10px;
+    /* display: none; */
+    padding: 15px;
+    color: var(--grisOscuro);
+}
+
+
+/*TABLET*/
+@media (min-width: 361px) {
+.body-main {
+    background-color: #ebebeb;
+    width: 100%;
+    margin: auto;
+}
+
+.body-main .img-banner {
+    width: 100%;
+}
+
+.body-main .general {
+    margin-bottom: 10px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.body-main .general h4 {
+    font-family: var(--roboto);
+    font-size: var(--titularesBasadoEnTuÚltimaVisita-Ofertas);
+    color: var(--grisOscuro);
+    text-align: center;
+    height: 40px;
+    margin: auto;
+}
+
+.body-main .general .general-art {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.body-main .general .general-art article {
+    background-color: white;
+    border: solid 1px lightgray;
+    height: 310px;
+    width: 275px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
+}
+
+.body-main .general .general-art article .img-producto {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    height: 60%;
+}
+
+.body-main .general .general-art article .caja-info {
+    border-top: solid 1px var(--grisClaro);
+}
+
+.body-main .general .general-art article .caja-info .envio {
+    display: block;
+    color: var(--verde);
+    text-align: justify;
+    font-size: 16px;
+    padding: 5px;
+    width: 23px;
+    height: 20px;
+    border: 1px solid var(--verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    margin-left: auto;
     top: -15px;
 }
-}
-    .precio-descuento{}
+
+.body-main .general .general-art article .caja-info .prec-desc{
+    display: flex;
 }
 
+.body-main .general .general-art article .caja-info .precios {
+    font-size: var(--precios);
+    margin-left: 10px;
+    display: inline;
+    padding: 0px 10px 10px 10px;
+    width: 30%;
+}
 
-@media (min-width:1024px){
-    .articulos{}
-    main {}
-    h4{}
-    article{width: 22%;}
-    .precio {
+.body-main .general .general-art article .caja-info .descuentos {
+    font-size: var(--descuentos);
+    margin-left: 10px;
+    color: var(--verde);
+    display: inline;
+    padding: 0px 10px 10px 10px;
+    width: 70%;
 }
-    .descuento{}
-    .contenedor{
+
+.body-main .general .general-art article .caja-info .descripcion {
+    font-size: var(--descripciones);
+    margin-left: 10px;
+    padding-top: 10px;
+    color: var(--grisOscuro);
 }
-    img{}
-    .carrito-envios{}
-    .precio-descuento{
 }
+
+/*DESKTOP*/
+@media (min-width: 769px) {
+.body-main {
+    background-color: #ebebeb;
+    width: 100%;
+    margin: auto;
 }
-    
+
+.body-main .img-banner {
+    width: 100%;
+}
+
+.body-main .general {
+    margin-bottom: 10px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.body-main .general h4 {
+    font-family: var(--roboto);
+    font-size: var(--titularesBasadoEnTuÚltimaVisita-Ofertas);
+    color: var(--grisOscuro);
+    text-align: left;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.body-main .general .general-art {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.body-main .general .general-art article {
+    background-color: white;
+    border: solid 1px lightgray;
+    height: 290px;
+    width: 230px;
+    /* text-align: center; */
+    /* margin: auto; */
+    /* margin-bottom: 10px; */
+    box-shadow: 0px 0px 10px rgb(100, 100, 100)
+}
+ 
+
+.body-main .general .general-art article .img-producto {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    height: 60%;
+}
+
+.body-main .general .general-art article .caja-info {
+    border-top: solid 1px var(--grisClaro);
+}
+
+.body-main .general .general-art article .caja-info .envio {
+    display: block;
+    color: var(--verde);
+    text-align: justify;
+    font-size: 16px;
+    padding: 5px;
+    width: 23px;
+    height: 20px;
+    border: 1px solid var(--verde);
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    top: -15px;
+}
+
+.body-main .general .general-art article .caja-info .prec-desc{
+    display: flex;
+}
+.body-main .general .general-art article .caja-info .precios {
+    font-size: var(--precios);
+    margin-left: 10px;
+    display: inline;
+    padding: 0px 10px 10px 10px;
+    width: 30%;
+}
+
+.body-main .general .general-art article .caja-info .descuentos {
+    font-size: var(--descuentos);
+    margin-left: 10px;
+    color: var(--verde);
+    display: inline;
+    padding: 0px 10px 10px 10px;
+    width: 70%;
+}
+
+.body-main .general .general-art article .caja-info .descripcion {
+    font-size: var(--descripciones);
+    margin-left: 10px;
+    padding-top: 10px;
+    color: var(--grisOscuro);
+}
+
+article {
+    position: relative;
+  }
+  
+  .descripcion {
+    display: none;
+  }
+  
+  .caja-info:hover .descripcion {
+    display: block;
+  }
+  
+  .caja-info:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .envio {
+    transition: transform 1s ease-in-out;
+  }
+  
+  .envio:hover {
+    transform: rotate(-90deg);
+  }
+
+}

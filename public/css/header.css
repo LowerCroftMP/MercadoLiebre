@@ -1,217 +1,308 @@
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.pagina {
+.body-header {
     background-color: var(--amarillo);
+    margin: 0px;
+    font-family: var(--roboto);
+    height: 30vh;
+}
+
+.body-header .componentes {
     width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+    flex-wrap: wrap;
 }
 
-.busqueda {
-    width: 90%;
-    border: 1px solid #000;
-    padding: 1px;
-    color: var(--grisoscuro);
-    background-color: var(--grisclaro);
-    text-align: center;
-    font-size: x-small;
-    border-radius: 4px;
+.body-header .componentes img {
+    width: 50vw;
 }
 
-#inicio{
-    display: flex;
-    flex-direction: column;
-    margin: 9px 0 45px 0;
-    width: 100%;
+.body-header .componentes form {
+    width: 50%;
+    display: inline;
+    margin: 30px 0;
 }
 
-#contenedorinicio{flex-wrap: wrap;display: flex;padding: 0px;justify-content: space-between;align-items: center;}
-#logo-ml{
-
-width: 50%;
-
-padding: 0%;
-}
-#busqueda-lupa{
-    
-width: 50%;
-    
-padding: 2%;
-    
-display: flex;
+.body-header .componentes form input {
+    display: inline;
+    color: var(--grisClaro);
+    padding: 3px;
+    font-size: small;
+    border-radius: 3px;
 }
 
-
-nav {
-    width: 100%;
-    padding: 1%;
+.body-header .componentes .icono {
+    font-size: 14px;
+    background-color: white;
+    padding: 3px;
+    border: solid 1px var(--grisOscuro);
+    display: inline;
+    position: absolute;
+    top: 29px;
+    right: 3px;
+    border-radius: 3px;
+    border-left: 0;
 }
 
-ul {
-    list-style-type: none;
-  }
-
-#principal {
-    display: none;
+.body-header .componentes p {
+    font-size: 15px;
+    margin: auto;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
 
-nav#segundonav {}
-
-
-nav#primernav {}
-
-
-#lupa {
-    border: 1px solid #000;
-    border-radius: 23%;
-    padding: 5px;
-    background-color: var(--grisclaro);
-    font-size: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav a{
-    text-decoration: none;
+.body-header nav {
     color: black;
-    
+    display: none;
 }
 
 .burger-menu {
-    width: 33px;
-    height: 29px;
-    padding: 3px;
-    color: var(--grisclaro);
-    font-size: 20px;
-    background-color: var(--celeste);
+    background-color: var(--azul);
+    color: white;
+    display: block;
+    max-width: 36px;
+    padding: 7px 0;
+    border-radius: 3px;
     text-align: center;
-    border-radius: 6px;
+    font-size: 15px;
+    margin: auto;
+}
+
+.burger-menu i {
+    color: white;
+}
+
+
+@media (min-width: 361px) {
+    .body-header {
+        background-color: var(--amarillo);
+        margin: 0px;
+        font-family: var(--roboto);
+        height: 100%;
     }
 
-#imgML {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
+    .body-header .componentes {
+        width: 100%;
+    }
 
-#compra{
-    display: flex;
-    padding: 0px;
-    margin: 15px;
-    height: 1px;
-    line-height: 15px;
-    margin-bottom: 4px;
-    font-size: 13px;
-}
+    .body-header .componentes img {
+        width: 15%;
+    }
 
+    .body-header .componentes form {
+        display: inline;
+        width: 59%;
+        position: relative;
+    }
 
-@media (min-width: 768px) {
-    header {
-    margin: 10px;
-}
-    
-    .pagina {
-    display: flow;
-}
-    
-    .busqueda {height: 125%;width: 100%;}
-    
-    #inicio{
-}
+    .body-header .componentes form input {
+        display: inline;
+        color: var(--grisClaro);
+        padding: 10px;
+        width: 75%;
+        border-radius: 3px;
+        margin-left: 45px;
+        border: none;
+    }
 
-    #contenedorinicio{
+    .body-header .componentes .icono {
+        font-size: 13px;
+        background-color: white;
+        padding: 10px;
+        display: inline;
+        position: absolute;
+        top: 0px;
+        right: 16px;
+        border-radius: 3px;
+        border: none;
+        border-left-style: ridge;
+        color: var(--grisOscuro);
+    }
+
+    .body-header .componentes p {
+        font-size: 15px;
+        font-weight: 400;
+        text-align: right;
+        width: 26%;
+        margin: 0;
+        text-align: end;
+        margin-top: 4%;
+    }
+
+    .body-header nav {
+        color: black;
         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-        margin: 15px;
-        padding: 18px;
-        width: 100%;
-        }
-    #logo-ml{
-    width: 25%;
-    padding: 0;
-}
+    }
 
-    #busqueda-lupa{
-    width: 30%;
-    height: 25px;
-    padding: 0;
-}
+    .body-header nav .navbar-left {
+        list-style: none;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
 
-    
-    nav {}
+    .body-header nav .navbar-left li {
+        color: black;
+        margin-left: 5px;
+    }
 
-    ul{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-    
-    #principal {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-    
-    nav#segundonav {
-    width: 50%;
-    display: flex;
-}
-    
-    
-    nav#primernav {display: flex;width: 43%;}
-    
-    
-    #lupa {
-    width: 12%;
-    padding: 14px;
-}
-    
-    nav a{}
-    
+    .body-header nav .navbar-left li a {
+        text-decoration: none;
+    }
+
+    .body-header nav .navbar-right {
+        list-style: none;
+        padding: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .body-header nav .navbar-right li {
+        color: black;
+        margin: 0;
+    }
+
+    .body-header nav .navbar-right li a {
+        text-decoration: none;
+    }
+
     .burger-menu {
-    display: none;
-    }   
-    #imgML {}
-    
-    #compra{
+        background-color: var(--celeste);
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        margin-left: 43%;
+        margin-top: 10px;
+        border-radius: 3px;
+        display: none;
+    }
+
+    .burger-menu i {
+        color: #ebebeb;
+        padding-top: 9px;
+    }
+}
+
+@media (min-width: 769px) {
+    .body-header {
+        background-color: var(--amarillo);
+        margin: auto;
+        font-family: var(--roboto);
+        height: 100%;
+        font-size: var(--cuerposDeTexto);
+    }
+
+    .body-header .componentes {
     width: 100%;
-    padding: 0px;
-    font-size: 14px;
-}
-}
+    }
 
+    .body-header .componentes img {
+        width: 15%;
+        margin-left: 5px;
+    }
 
-@media (min-width:1024px){
-    header {}
-    .pagina {}
-    .busqueda {}
-    #inicio{}
-    #contenedorinicio{}
-    #logo-ml{}
-    #busqueda-lupa{
-    width: 35%;
-    padding: 0%;
-}
-    nav {}
-    ul{}
-    #principal {}
-    nav#segundonav {}
-    nav#primernav {}
-    #lupa {
-    width: 5%;
-    border-radius: 25%;
-}
-    nav a{}
-    .burger-menu {}   
-    #imgML {}
-    #compra{}
+    .body-header .componentes form {
+        display: inline;
+        width: 50%;
+        position: relative;
+    }
+
+    .body-header .componentes form input {
+        display: inline;
+        color: var(--grisClaro);
+        padding: 10px;
+        width: 80%;
+        border-radius: 3px;
+        margin-left: 10px;
+        border: none;
+    }
+
+    .body-header .componentes .icono {
+        font-size: 13px;
+        background-color: white;
+        padding: 10px;
+        display: inline;
+        position: absolute;
+        top: 0px;
+        right: 45px;
+        border-radius: 3px;
+        border: none;
+        border-left-style: ridge;
+        color: var(--grisOscuro);
+    }
+
+    .body-header .componentes p {
+        font-size: 18px;
+        font-weight: 400;
+        text-align: right;
+        width: 34%;
+    }
+
+    .body-header nav {
+        color: black;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 16px;
+    }
+
+    .body-header nav .navbar-left {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .body-header nav .navbar-left li {
+        color: black;
+        margin-left: 5px;
+    }
+
+    .body-header nav .navbar-left li a {
+        text-decoration: none;
+    }
+
+    .body-header nav .navbar-right {
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .body-header nav .navbar-right li {
+        color: black;
+        margin-left: 5px;
+    }
+
+    .body-header nav .navbar-right li a {
+        text-decoration: none;
+    }
+
+    .burger-menu {
+        background-color: var(--celeste);
+        text-align: center;
+        width: 35px;
+        height: 35px;
+        margin-left: 43%;
+        margin-top: 46px;
+        border-radius: 3px;
+        display: none;
+    }
+
+    .burger-menu i {
+        color: #ebebeb;
+        padding-top: 9px;
+    }
 }
